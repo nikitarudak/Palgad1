@@ -31,6 +31,15 @@ def kustutamine(i,p):
         andmed_ekranile(i,p)
     return i,p
 def sorteerimine(i,p,v):
+    """Sorteerimine palgade järgi.
+
+    Tagastame inimeste ja palgade listid teise funktsiooni kasutamisel
+
+    :param list 1: Inimeste järjend.
+    :param list p: Palgade järjend.
+    :param int v: sorteerimise tüüp
+    :rtype: list,list
+    """
     N = len(p)
     if v == 1:
         for n in range (0, N):
